@@ -1,6 +1,10 @@
 key,x,y,z,parent,theta
 midpoint,775,2700,0,root,"[[0,180]]"
+right_side,775,4000,0,midpoint,"[[0,180]]"
 point_1,775,885,0,midpoint,"[[0,180]]"
 galvo_up,1550,150,0,point_1,[0]
-shelf_up,433.3,3606.5,0,midpoint,"[[0,180]]"
+shelf_up,433.3,3606.5,0,right_side,"[[0,180]]"
 shelf,433.3,3606.5,630,shelf_up,[0]
+raman_up,1549,4106,0,right_side,[0]
+raman_out,1549,4106,612,raman_up,[0]
+raman_in,1432,4106.64,612.75,raman_out,[0]
