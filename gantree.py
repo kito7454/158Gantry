@@ -5,7 +5,7 @@ import json
 
 import buildGantree
 
-defaultTree = r"C:\Users\v_zor\PycharmProjects\KyleHardcode\curr_gantry.csv"
+defaultTree = r"C:\Users\minok\PycharmProjects\gantryAutomation\curr_gantry.csv"
 
 
 class GanTree():
@@ -277,6 +277,7 @@ def routeToCoordinates(route):
             continue
         # print(key)
         row = tableLookup(str(key.name))
+        print(row["x"].iloc[0])
         coords[i, 0] = float(row["x"].iloc[0])
         coords[i, 1] = float(row["y"].iloc[0])
         coords[i, 2] = float(row["z"].iloc[0])

@@ -2,9 +2,9 @@ import pandas as pd
 import numpy as np
 import gantree as gt
 from helpers.gantryHelperAdvanced import navigate, xyzMove, goTo
-from zaber_motion import Units
+
 from zaber_motion.ascii import Connection, pvt
-import helpers.gantryHelperAdvanced as gh
+
 
 def buildGantree(file):
     df = pd.read_csv(file)
@@ -38,7 +38,7 @@ if __name__ == "__main__":
         angle1 = device_list[2]
         angle2 = device_list[3]
 
-        rt = buildGantree(r"C:\Users\v_zor\PycharmProjects\KyleHardcode\curr_gantry.csv")
+        rt = buildGantree(r"C:\Users\minok\PycharmProjects\gantryAutomation\curr_gantry.csv")
 
 
         # goTo(connection, rt, "test_point4", 0, move=True)
