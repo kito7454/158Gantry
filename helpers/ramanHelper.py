@@ -20,6 +20,7 @@ WAIT_TIME = 1       # Seconds to wait at top of Z
 # important positions after homing:
 loading = [48,0,0]
 exp_start = [39.5,31.8,0]
+start_string = "39.5 31.8 0 m"
 
 
 def read_response(ser):
@@ -142,5 +143,6 @@ if __name__ == "__main__":
         # send_command(ser, "cal")
         get_initial_position(ser)
         send_command(ser, "1 j")
-        time.sleep(2)
-        # ser.close()
+        send_command(ser, start_string)
+    #     time.sleep(2)
+    #     # ser.close()
